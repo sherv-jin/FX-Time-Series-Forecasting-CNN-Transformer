@@ -1,6 +1,6 @@
 # FX Time Series Forecasting with CNN-Transformer
 
-This repository implements a hybrid model combining Convolutional Neural Networks (CNNs) and Transformers for forecasting foreign exchange (FX) time series data. The approach is adapted from the paper ["Financial Time Series Forecasting using CNN and Transformer"](https://arxiv.org/pdf/2304.04912), which demonstrated superior performance in predicting intraday price movements by capturing both short-term and long-term dependencies.
+A Master in Science course in Deep Learning group project which implements a hybrid model combining Convolutional Neural Networks (CNNs) and Transformers for forecasting foreign exchange (FX) time series data. The approach is adapted from the paper ["Financial Time Series Forecasting using CNN and Transformer"](https://arxiv.org/pdf/2304.04912), which demonstrated superior performance in predicting intraday price movements by capturing both short-term and long-term dependencies.
 
 ## Overview
 
