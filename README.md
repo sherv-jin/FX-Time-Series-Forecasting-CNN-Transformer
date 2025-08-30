@@ -8,13 +8,14 @@ This repository implements a hybrid model combining Convolutional Neural Network
 - **Model Architecture**:
   - **CNN**: Extracts local patterns to model short-term dependencies.
   - **Transformer**: Captures global context and long-term dependencies.
-- **Dataset**: Historical FX data sampled at daily intervals.
+- **Dataset**: Historical USDJPY FX data sampled at daily intervals.
 
 ## Methodology
 
 1. **Data Preprocessing**:
    - Normalize and structure FX data into sequences suitable for model input.
-   - Label each sequence with the corresponding future price movement.
+   - Create feature engineered variables (lags, momentum, trend, volatility, volume , etc)
+   - Label each sequence with the corresponding future price movement (binary forward classification)
 
 2. **Model Architecture**:
    - **CNN Layer**: 1D convolutional filters capture local temporal patterns.
@@ -23,7 +24,8 @@ This repository implements a hybrid model combining Convolutional Neural Network
 
 3. **Training**:
    - Split data into training and validation sets.
-   - Train with categorical cross-entropy loss.
+   - Train with binary cross-entropy loss.
 
 4. **Evaluation**:
-   - Metrics: Accuracy, precision, recall, and F1-score.
+   - Metrics: Accuracy and AUC
+   - Test Set achieved a 64.43% accuracy with 0.64 AUC
